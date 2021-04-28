@@ -41,6 +41,7 @@ a, a:link, a:active, a:visited, a:hover
     color: #333;
     text-decoration: underline;
 }
+/* ページ上部のヘッダ */
 #header
 {
     display: block;
@@ -54,6 +55,7 @@ a, a:link, a:active, a:visited, a:hover
     overflow: hidden;
     z-index: 10;
 }
+/* ノートを表示する部分 */
 #content
 {
     display: table;
@@ -69,6 +71,7 @@ a, a:link, a:active, a:visited, a:hover
     font-weight: bold;
     letter-spacing: 1.25px;
 }
+/* メニュー部分(見えない位置にしている) */
 #sidebarMenu {
     height: 100%;
     position: fixed;
@@ -79,6 +82,7 @@ a, a:link, a:active, a:visited, a:hover
     transition: transform 250ms ease-in-out;
     background: linear-gradient(180deg, #b1963e 0%, #d3c972 100%);
 }
+/* メニューリスト */
 .sidebarMenuInner{
     margin:0;
     padding:0;
@@ -105,14 +109,17 @@ a, a:link, a:active, a:visited, a:hover
     cursor: pointer;
     text-decoration: none;
 }
+/* チェックされたら表示する */
 input[type="checkbox"]:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
+/* チェックボックスを隠す */
 input[type=checkbox] {
     transition: all 0.3s;
     box-sizing: border-box;
     display: none;
 }
+/* メニュー3本線 */
 .sidebarIconToggle {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -126,6 +133,7 @@ input[type=checkbox] {
     height: 22px;
     width: 22px;
 }
+/* 白線 */
 .spinner {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -134,6 +142,7 @@ input[type=checkbox] {
     width: 100%;
     background-color: #fff;
 }
+/* 3本線 */
 .horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -154,6 +163,7 @@ input[type=checkbox] {
     float: left;
     margin-top: 3px;
 }
+/* チェック時 × 表示 */
 input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -170,4 +180,20 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
+}
+/* 矢印を消す */
+summary {
+    position: relative;
+    display: block; /* 矢印を消す */
+    padding-left: 40px; /* アイコン分の余白 */
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* 折り畳みの内部 */
+.Release {
+    text-indent:40px;
 }
