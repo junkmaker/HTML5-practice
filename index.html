@@ -11,18 +11,11 @@
             <div class="spinner diagonal part-2"></div>
         </label>
         <nav id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-            <details>
-                <summary class="Selected"><p>プロジェクト A</p></summary>
-                <li class="Release"><a id="1" href="javascript:OnLinkClick(1);">バージョン1</a></li>
-                <li class="Release"><a id="1" href="javascript:OnLinkClick(2);">バージョン2</a></li>
-            </details>
-            <details>
-                <summary class="Selected"><p>プロジェクト B</p></summary>
-                <li class="Release"><a id="1" href="javascript:OnLinkClick(1);">バージョン1</a></li>
-                <li class="Release"><a id="1" href="javascript:OnLinkClick(2);">バージョン2</a></li>
-            </details>
+            <ul class="sidebarMenuInner" id="sidebarMenuList">
             </ul>
+            <form>
+                <input id="file" type="file" name="file">
+            </form>
         </nav>
     </head>
     <body>
