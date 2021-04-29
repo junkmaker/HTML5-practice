@@ -32,13 +32,10 @@ h4, h5, h6
 {
     font-size: 16px;
 }
-p
-{
-    margin: 0 0 10px 0;
-}
 a, a:link, a:active, a:visited, a:hover
 {
-    color: #333;
+    color: #fff;
+    font-weight: bold;
     text-decoration: underline;
 }
 /* ページ上部のヘッダ */
@@ -189,9 +186,9 @@ summary {
     cursor: pointer;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 50%;
     cursor: pointer;
     text-decoration: none;
+    font-weight: bold;
 }
 /* 折り畳みの内部 */
 .Release {

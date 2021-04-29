@@ -12,24 +12,22 @@
         </label>
         <nav id="sidebarMenu">
             <ul class="sidebarMenuInner">
-               <li class="Selected"><a href="index.html">トップ</a></li>
-               <li><p>プロジェクト A</p></li>
-                <details>
-                    <summary>リリース</summary>
-                    <li class="Release"><p>バージョン1</p></li>
-                    <li class="Release"><p>バージョン2</p></li>
-                </details>
-                <li><p>プロジェクト B</p></li>
-                <details>
-                    <summary>リリース</summary>
-                    <li class="Release"><p>バージョン1</p></li>
-                    <li class="Release"><p>バージョン2</p></li>
-                </details>
+            <details>
+                <summary class="Selected"><p>プロジェクト A</p></summary>
+                <li class="Release"><a id="1" href="javascript:OnLinkClick(1);">バージョン1</a></li>
+                <li class="Release"><a id="1" href="javascript:OnLinkClick(2);">バージョン2</a></li>
+            </details>
+            <details>
+                <summary class="Selected"><p>プロジェクト B</p></summary>
+                <li class="Release"><a id="1" href="javascript:OnLinkClick(1);">バージョン1</a></li>
+                <li class="Release"><a id="1" href="javascript:OnLinkClick(2);">バージョン2</a></li>
+            </details>
             </ul>
         </nav>
     </head>
     <body>
         <div id="header"></div>
-        <iframe title="リリースノート" src="note.html" id="id_ifrem2" width=100% height=100%></iframe>
+        <iframe title="リリースノート" src="note1.html" id="id_note" width=100% height=100%></iframe>
+        <script type="text/javascript" src="menu.js"></script>
     </body>
 </html>
